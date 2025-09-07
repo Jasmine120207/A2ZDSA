@@ -1,0 +1,14 @@
+class Main {
+    static void fun(int i, int n) {
+        if (i > n) {
+            return; // base case
+        } else {
+            System.out.print(i + " "); // print i
+            fun(i + 1, n); // recursive call with next i
+        }
+    }
+
+    public static void main(String[] args) {
+        fun(1, 7); // prints numbers from 1 to 7
+    }
+}
