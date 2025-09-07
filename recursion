@@ -1,0 +1,17 @@
+class Main{
+    static String name="jasu";
+    static int n=5;
+     static void  fun(){
+        if(n==5){
+            return;
+        }
+        else{
+        System.out.println(name);
+        fun();
+        }
+    }
+    public static void main(String[] args){
+        Main m=new Main();
+        fun();
+    }
+}
